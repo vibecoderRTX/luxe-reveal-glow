@@ -63,7 +63,7 @@ export function Navbar() {
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className={`md:hidden ${scrolled ? "text-primary-foreground" : "text-foreground"}`}
+          className="text-primary-foreground md:hidden"
         >
           {open ? <X size={26} /> : <Menu size={26} />}
         </button>

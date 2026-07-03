@@ -34,9 +34,7 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
         <a
           href="#top"
-          className={`font-serif text-2xl tracking-tight transition-colors ${
-            scrolled ? "text-primary-foreground" : "text-primary"
-          }`}
+          className="font-serif text-2xl tracking-tight text-primary-foreground transition-colors"
         >
           Maison<span className="text-gold"> Lumière</span>
         </a>
@@ -46,11 +44,7 @@ export function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className={`group relative text-sm font-medium uppercase tracking-[0.15em] transition-colors ${
-                  scrolled
-                    ? "text-primary-foreground/80 hover:text-primary-foreground"
-                    : "text-foreground/70 hover:text-foreground"
-                }`}
+                className="group relative text-sm font-medium uppercase tracking-[0.15em] text-primary-foreground/75 transition-colors hover:text-primary-foreground"
               >
                 {l.label}
                 <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-300 group-hover:w-full" />

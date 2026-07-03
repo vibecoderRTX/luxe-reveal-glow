@@ -77,14 +77,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Maison Lumière — Luxury Hair, Skin & Spa Salon" },
+      {
+        name: "description",
+        content:
+          "Maison Lumière is an ultra-premium salon and spa offering refined hair, skin, nail and spa artistry. Refine your style. Reveal your glow.",
+      },
+      { name: "author", content: "Maison Lumière" },
+      { property: "og:title", content: "Maison Lumière — Luxury Hair, Skin & Spa Salon" },
+      {
+        property: "og:description",
+        content:
+          "An ultra-premium salon and spa experience. Refine your style. Reveal your glow.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@maisonlumiere" },
     ],
     links: [
       {
@@ -92,6 +100,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..700&family=Inter:wght@300;400;500;600;700&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
